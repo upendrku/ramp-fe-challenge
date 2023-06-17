@@ -12,9 +12,11 @@ export const InputCheckbox: InputCheckboxComponent = ({ id, checked = false, dis
           "RampInputCheckbox--label-checked": checked,
           "RampInputCheckbox--label-disabled": disabled,
         })}
+        htmlFor={inputId}
       />
       <input
         id={inputId}
+        name={inputId}
         type="checkbox"
         className="RampInputCheckbox--input"
         checked={checked}
